@@ -1,118 +1,266 @@
+대한민국 최고의 적외선 센서 기업 웹사이트 기획안
+프로젝트 개요
+
+프로젝트 명: 대한민국 유일의 적외선 센서 제조 기술 기반 국방 분야 특화 웹사이트 구축
+
+핵심 차별점: 대한민국 유일의 적외선 센서 제조 기술력을 바탕으로 국방 분야에 특화된 솔루션을 제공합니다.
+
+핵심 목표: 해외 국가를 대상으로 제품의 우수성을 알리고, 실질적인 구매로 이어질 수 있도록 신뢰도 높은 온라인 플랫폼을 구축합니다.
+
+필수 구성 요소
+
+대한민국 최고의 적외선 센서 기업이라는 점을 명확히 인지할 수 있는 브랜딩
+
+SWIR, LWIR, MWIR 제품 라인업 및 가격 문의 기능[1][2][3][4][5]
+
+대표 성함 명시를 통한 신뢰도 제고
+
+예약/문의 기능을 통한 잠재 고객과의 소통 채널 확보
+
+디자인/콘텐츠
+
+디자인 분위기: 모던하고 강인하며, 신뢰감을 주는 디자인[6][7][8][9]
+
+색상 팔레트: 다크 네이비, 차콜 그레이를 메인으로 사용하고, 포인트 컬러로 골드 또는 레드를 활용하여 강인하고 고급스러운 느낌을 전달합니다.
+
+타이포그래피: 가독성이 높고 강직한 느낌의 Sans-serif 계열 폰트를 사용하여 전문성을 강조합니다.
+
+웹사이트 기획안 (HTML 코드)
+code
+Html
+play_circle
+download
+content_copy
+expand_less
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>최고의 적외선 검출기 웹사이트 기획안 (SWIR, MWIR, LWIR 특화)</title>
+    <title>대한민국 최고의 적외선 센서 기업</title>
     <style>
-        body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; line-height: 1.6; color: #333; background-color: #f4f4f4; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 20px; background-color: #ffffff; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1 { color: #004d99; text-align: center; border-bottom: 3px solid #cc0000; padding-bottom: 15px; }
-        h2 { border-left: 5px solid #004d99; padding-left: 15px; color: #004d99; margin-top: 40px; margin-bottom: 20px; }
-        h3 { color: #cc0000; margin-top: 15px; }
-        .section-box { border: 1px solid #ddd; padding: 20px; margin-bottom: 25px; background-color: #fafafa; border-radius: 5px; }
-        .design-idea { font-style: italic; color: #555; border-left: 3px solid #ccc; padding-left: 10px; margin-top: 10px; }
-        .key-copy { font-weight: bold; color: #000; font-size: 1.2em; line-height: 1.4; }
-        .highlight { color: #cc0000; font-weight: bold; }
-        ul { list-style-type: none; margin-left: 0; padding-left: 20px; }
-        ul li { margin-bottom: 8px; position: relative; }
-        ul li::before { content: '•'; color: #004d99; font-weight: bold; display: inline-block; width: 1em; margin-left: -1em; }
-        p { margin-bottom: 10px; }
-        .note { margin-top: 20px; padding: 10px; background-color: #e6f7ff; border: 1px solid #99d6ff; color: #003366; font-weight: bold; }
-        .product-focus { background-color: #fff3e6; border: 1px dashed #ff9933; padding: 15px; margin-top: 15px; }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        .header {
+            background-color: #0d0d0d;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333333;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1581091226809-a1b83a549744?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        .hero-text {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 10px;
+        }
+        .hero-text h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero-text p {
+            font-size: 20px;
+        }
+        .section {
+            padding: 80px 40px;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .product-card {
+            background-color: #2a2a2a;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: left;
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .product-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .product-card p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #b38600;
+            color: #ffffff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .about-section {
+            background-color: #0d0d0d;
+        }
+        .contact-section {
+            background-color: #1a1a1a;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            background-color: #2a2a2a;
+            border: 1px solid #444444;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #0d0d0d;
+            padding: 20px 40px;
+            text-align: center;
+            border-top: 1px solid #333333;
+        }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>적외선 검출기 웹사이트 기획안 (국방/SWIR, MWIR, LWIR 특화)</h1>
-    <p class="note">✅ **핵심 목표:** 해외 국가 대상 SWIR, MWIR, LWIR 제품 구매 유치 <br> ✅ **디자인 키워드:** 샤프함(Sharp), 강인함(Robust), 메탈릭 블랙/네이비 + 레드/골드 악센트</p>
+    <header class="header">
+        <div class="logo">K-DEFENSE SENSORS</div>
+        <nav class="nav">
+            <a href="#about">회사소개</a>
+            <a href="#products">제품</a>
+            <a href="#contact">예약/문의</a>
+        </nav>
+    </header>
 
-    <h2>1. 메인 / 홈 (HOME)</h2>
-    <div class="section-box">
-        <h3>핵심 카피</h3>
-        <p class="key-copy">
-            "**<span class="highlight">대한민국 최고의 적외선 센서 제조</span>**: 전 세계 국방을 위한 <span class="highlight">최고 정밀도의 시야</span>. $<회사 이름>$는 기술 격차를 창출합니다."
-        </p>
-        <p>어둠을 꿰뚫는 혁신. 글로벌 미션 성공을 위한 차세대 적외선 검출기 솔루션을 제시합니다.</p>
-
-        <h3>디자인/레이아웃 아이디어</h3>
-        <ul>
-            <li>**메인 비주얼:** 야간 전투, 정찰 드론 등에 적용된 듯한 고화질의 <span class="highlight">적외선 촬영 이미지</span>(위장된 사물, 열 영상 등)를 배경으로 사용. 기술력을 강조하는 3D 센서 모델링 이미지 병행.</li>
-            <li>**레이아웃:** 메탈릭 질감의 다크 테마 배경에 샤프한 흰색 폰트. 슬로건은 화면 중앙에 배치.</li>
-            <li>**퀵 링크:** SWIR, MWIR, LWIR 주요 제품 페이지로 연결되는 3개의 아이콘/배너를 하단에 배치.</li>
-        </ul>
-    </div>
-
-    <h2>2. 회사 소개 (ABOUT US / Leadership)</h2>
-    <div class="section-box">
-        <h3>핵심 카피</h3>
-        <p class="key-copy">
-            "**신뢰를 구축하는 기술 리더십**: 국방 분야의 극한 환경을 위한 독보적인 센서 제조 기술."
-        </p>
-        <p>기술 개발 철학 및 글로벌 시장을 향한 비전을 제시하며 회사의 강인한 신뢰도를 구축합니다.</p>
-
-        <h3>디자인/레이아웃 아이디어</h3>
-        <ul>
-            <li>**대표이사 성함:** <span class="highlight">대표이사 $<대표이사 성함>$</span>의 비전 메시지를 강조된 폰트와 함께 배치. 전문적인 정장 착용 사진 사용.</li>
-            <li>**기술력 그래프:** 경쟁사 대비 센서 성능(해상도, 감도, 안정성) 우위를 보여주는 샤프한 인포그래픽 배치.</li>
-            <li>**제조 시설:** 최첨단 클린룸, 테스트 베드 등 제조 시설의 강인하고 정돈된 이미지를 사용하여 품질과 규모를 시각적으로 전달.</li>
-        </ul>
-    </div>
-
-    <h2>3. 프로그램 소개 (Products & Solutions)</h2>
-    <div class="section-box">
-        <h3>핵심 카피</h3>
-        <p class="key-copy">
-            "**전술적 우위를 위한 정밀 솔루션**: 모든 파장대에서 <span class="highlight">최고의 성능</span>을 보장하는 센서 제조 프로그램."
-        </p>
-        <p>각 국방 프로그램에 최적화된 센서 라인업을 제공하며, 해외 파트너를 위한 맞춤형 개발 프로그램도 소개합니다.</p>
-
-        <h3>디자인/레이아웃 아이디어</h3>
-        <div class="product-focus">
-            <h4>[A] SWIR (단파장 적외선) 검출기 프로그램</h4>
-            <p><strong>핵심 강점:</strong> 안개/연기 관통 능력 및 은닉 물질 탐지 정밀도. <span class="highlight">주요 타겟:</span> 미사일 경보, 자율 주행 플랫폼, 감시/정찰.</p>
-            <p class="design-idea">SWIR <span class="highlight">적외선 촬영 이미지</span>(대기 투과도가 높은 선명한 영상)와 함께 제품 모델명을 카드 형태로 제시. 데이터 시트 다운로드 버튼 강조.</p>
-
-            <h4>[B] MWIR (중파장 적외선) 검출기 프로그램</h4>
-            <p><strong>핵심 강점:</strong> 넓은 온도 범위 감지 및 장거리 탐지 성능. <span class="highlight">주요 타겟:</span> 고성능 열상 장비, 타겟팅 시스템.</p>
-            <p class="design-idea">MWIR <span class="highlight">적외선 촬영 이미지</span>(중거리 열 분포 강조 영상)와 함께 제품 적용 사례(예: 항공기 탑재) 시뮬레이션 이미지 배치.</p>
-
-            <h4>[C] LWIR (장파장 적외선) 검출기 프로그램</h4>
-            <p><strong>핵심 강점:</strong> 낮은 온도 대비 식별 능력, 주변 환경에 대한 높은 감도. <span class="highlight">주요 타겟:</span> 야간 감시, 국경 보안, 개인 휴대 열상 장비.</p>
-            <p class="design-idea">LWIR <span class="highlight">적외선 촬영 이미지</span>(인체 및 저온 물체 식별 영상)를 사용하여 '강인한' 전천후 감시 능력을 강조.</p>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>대한민국 최고의 적외선 센서 기업</h1>
+            <p>세상을 보는 새로운 눈, 국방 기술의 미래를 선도합니다.</p>
         </div>
-    </div>
+    </section>
 
-    <h2>4. 예약/문의 (Contact & Global Sales)</h2>
-    <div class="section-box">
-        <h3>핵심 카피</h3>
-        <p class="key-copy">
-            "**전략적 파트너십 문의**: 귀 국방 프로젝트의 성능 우위를 $<회사 이름>$와 함께 확보하십시오."
-        </p>
-        <p>제품 견적, 기술 통합 상담, 국제 계약 절차에 대한 <span class="highlight">예약/문의</span> 전문 창구입니다. 우리는 **수출 절차**에 대한 높은 이해도를 가지고 있습니다.</p>
+    <section id="about" class="section about-section">
+        <h2 class="section-title">회사소개</h2>
+        <p style="max-width: 800px; margin: 0 auto;">저희는 대한민국 유일의 적외선 센서 제조 기술을 보유한 국방 전문 기업입니다. 수십 년간의 연구 개발을 통해 축적된 독보적인 기술력으로 가장 까다로운 환경에서도 최고의 성능을 보장하는 적외선 센서를 생산합니다. 저희의 목표는 단순한 제품 생산을 넘어, 고객의 완벽한 임무 수행을 위한 최적의 솔루션을 제공하는 것입니다. 대표 [대표 성함] 올림.</p>
+    </section>
 
-        <h3>디자인/레이아웃 아이디어</h3>
-        <ul>
-            <li>**전문 문의 폼:** '기관/국가', '관심 제품군 (SWIR, MWIR, LWIR)', '예상 구매 규모' 등의 필수 입력 필드를 명확히 구분하여 해외 바이어의 전문성을 확보.</li>
-            <li>**강렬한 CTA:** 배경색을 레드 또는 짙은 네이비로 설정하고 "Global Sales Inquiry" 버튼을 눈에 띄게 강조.</li>
-            <li>**해외 지사/대리점:** (만약 있다면) 해외 연락 거점을 지도 또는 리스트 형태로 제시하여 접근 용이성 강조.</li>
-        </ul>
-    </div>
+    <section id="products" class="section">
+        <h2 class="section-title">제품</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1517976487-142104880378?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SWIR 이미지">
+                <h3>SWIR (단파 적외선)</h3>
+                <p>연기, 안개, 먼지를 투과하여 숨겨진 위협을 식별하고, 야간에도 선명한 이미지를 제공하여 감시 및 정찰 능력을 극대화합니다.</p>
+                <a href="#contact" class="cta-button">가격 문의</a>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1614769704259-24a9c34a41f2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="MWIR 이미지">
+                <h3>MWIR (중파 적외선)</h3>
+                <p>장거리 표적 탐지 및 미사일 추적에 탁월한 성능을 발휘하며, 엔진과 같은 고온의 열원을 정밀하게 식별하여 아군의 생존성을 보장합니다.</p>
+                <a href="#contact" class="cta-button">가격 문의</a>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1581091870631-f1f1d1a938c2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="LWIR 이미지">
+                <h3>LWIR (장파 적외선)</h3>
+                <p>열상 감지 기술을 통해 완벽한 어둠 속에서도 사람이나 차량의 열 신호를 감지하여, 국경 감시 및 주요 시설 방어에 필수적인 역할을 수행합니다.</p>
+                <a href="#contact" class="cta-button">가격 문의</a>
+            </div>
+        </div>
+    </section>
 
-    <h2>5. 푸터 (Footer)</h2>
-    <div class="section-box">
-        <h3>핵심 정보</h3>
-        <p>$(회사명) | 대한민국 최고의 적외선 센서 제조 | International Export License Compliant.</p>
+    <section id="contact" class="section contact-section">
+        <h2 class="section-title">예약/문의</h2>
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <label for="name">성함</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">국가</label>
+                    <input type="text" id="country" name="country">
+                </div>
+                <div class="form-group">
+                    <label for="message">문의 내용</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">문의하기</button>
+            </form>
+        </div>
+    </section>
 
-        <h3>디자인/레이아웃 아이디어</h3>
-        <ul>
-            <li>**강인한 폰트:** 모든 정보는 읽기 쉽고 샤프한 폰트로 처리.</li>
-            <li>**법적 고지:** 수출입 규제 및 기술 보안 준수 관련 내용을 명시하여 해외 바이어의 신뢰도를 높임.</li>
-        </ul>
-    </div>
-
-</div>
+    <footer class="footer">
+        <p>&copy; 2025 K-DEFENSE SENSORS. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
+Sources
+help
+photonicsonline.com
+invariant-corp.com
+researchgate.net
+engineering.com
+x26.com
+techvillageco.com
+allianceinteractive.com
+startdesigns.com
+seahawkmedia.com
+Google Search Suggestions
+Display of Search Suggestions is required when using Grounding with Google Search. Learn more
+modern and strong website design for defense industry
+infrared sensor technology website design inspiration
+military technology website layout ideas
+SWIR LWIR MWIR infrared sensor applications in defense
+royalty-free infrared images for website
